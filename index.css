@@ -9,17 +9,17 @@
 :root{
     /*--COLORS--*/
 
-    --white-bg-clr: #ffff;
+    --white-bg-clr: #fff;
     --body-clr: #D3D3D3;
-    --img-background-clr: #C0BBBB;
+    --img-background-clr: #666;
 
     /*DESKTOP-TEXT*/
     --desktop-body-text: 1.2em;
     --desktop-secondary-text: 1em;
     
     /*MOBILE*/
-    --mobile--body-text: .8em; 
-    --mobile-secondary-text: .2em;
+    --mobile--body-text: .91em; 
+    --mobile-secondary-text: .8em;
 
 }
 
@@ -64,7 +64,7 @@ body{
 
 /* ==FILTER BOX== */
 .filter_content_box label{
-    font-size: clamp(var(--mobile-secondary-text) 4vw, var(--desktop-body-text));
+    font-size: clamp(var(--mobile-secondary-text), 4vw, var(--desktop-body-text));
 }
 
 select{
@@ -77,7 +77,7 @@ select{
 /* ==PODCAST DATA BOX */
 .main_podcast_data_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 2em;
     gap: 1em;
 }
@@ -119,9 +119,11 @@ select{
     color: var(--img-background-clr);
 }
 
+
+
 /*===MOBILE RESPONSIVE===*/
 
-@media (max-width:376px) {
+@media (max-width:378px) {
 
     /* ==PODCAST DATA BOX */
 .main_podcast_data_container{
@@ -135,7 +137,7 @@ select{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-self: center;
+    align-items: center;
 }
 
 }
