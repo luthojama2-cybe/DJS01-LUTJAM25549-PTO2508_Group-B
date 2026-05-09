@@ -11,15 +11,15 @@
 
     --white-bg-clr: #ffff;
     --body-clr: #D3D3D3;
-    --img-bcakground-clr: #C0BBBB;
+    --img-background-clr: #C0BBBB;
 
     /*DESKTOP-TEXT*/
     --desktop-body-text: 1.2em;
     --desktop-secondary-text: 1em;
     
     /*MOBILE*/
-    --mobile--body-text: 1.125em; 
-    --mobile-secondary-text: .8em;
+    --mobile--body-text: .8em; 
+    --mobile-secondary-text: .2em;
 
 }
 
@@ -64,7 +64,7 @@ body{
 
 /* ==FILTER BOX== */
 .filter_content_box label{
-    font-size: clamp(var(--mobile--body-text), 4vw, var(--desktop-body-text));
+    font-size: clamp(var(--mobile-secondary-text) 4vw, var(--desktop-body-text));
 }
 
 select{
@@ -95,7 +95,7 @@ select{
     aspect-ratio: 1 / 0.8;
     padding: 1em;
     border-radius: 10px;
-    background-color: var(--img-bcakground-clr);
+    background-color: var(--img-background-clr);
 }
 
 .main_podcast_data_container .podcast_data{
@@ -115,15 +115,27 @@ select{
     padding: .4em;
 }
 
+.main_podcast_data_container .season_description, .season_update{
+    color: var(--img-background-clr);
+}
+
 /*===MOBILE RESPONSIVE===*/
 
 @media (max-width:376px) {
-    /*==HEADER==*/
-    .header{
-    width: 100%;
+
+    /* ==PODCAST DATA BOX */
+.main_podcast_data_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2em;
+    gap: 1em;
+}    
+
+.filter_content_box{
     display: flex;
-    justify-content: space-between;
-    padding: 2em;
-    background: var(--white-bg-clr);
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
 }
+
 }
