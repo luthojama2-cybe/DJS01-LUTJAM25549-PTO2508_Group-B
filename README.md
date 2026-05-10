@@ -67,3 +67,8 @@ Make sure to dive into the wireframe reference images folder for guidance on how
 
 - A fully functional, responsive podcast preview web application.
 - Clean, well-commented source code (HTML, CSS, JS).
+
+## Student Feedback
+
+- This project served as a good measure of my skills, showing how through consistent practise with Html, and css I have become more efficient at writing code. Something that took me nearly a whole 2 days to write now took me only a couple of hours.
+- My understanding of javaScript is also improving, even through consistent research and application I delivered as much as I could, and I think I did pretty well.
