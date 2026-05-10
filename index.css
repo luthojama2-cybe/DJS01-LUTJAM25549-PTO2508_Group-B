@@ -280,9 +280,7 @@ select{
     .modal_seasons_list{
         grid-template-columns: 1fr;
     }
-}
-
-    /*===MODAL BOX===*/
+        /*===MODAL BOX===*/
     .podcast_modal{
         width: 100%;
         min-width: 100%;
@@ -318,3 +316,6 @@ select{
     flex-wrap: wrap;
     gap: 1em;
 }
+}
+
+
